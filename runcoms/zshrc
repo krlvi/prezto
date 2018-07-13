@@ -11,5 +11,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
+alias vim='nvim'
+alias pp='prettier **/*.ts --write'
+PATH=/Users/kiril/.rbenv/shims:/usr/bin/python:/usr/local/go/bin:$PATH
+source ~/.secret_vars
+test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+source /Users/kiril/.evm/scripts/evm
+export GOPATH=$HOME/go
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
