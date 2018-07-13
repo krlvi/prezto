@@ -10,7 +10,7 @@ if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/
+export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/:/usr/local/go/bin
 
 alias ll="ls -ltr"
 alias loc="git ls-files | xargs wc -l"
