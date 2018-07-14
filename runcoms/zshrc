@@ -14,9 +14,6 @@ fi
 alias vim='nvim'
 alias pp='prettier **/*.ts --write'
 PATH=/Users/kiril/.rbenv/shims:/usr/bin/python:/usr/local/go/bin:$PATH
-source ~/.secret_vars
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
-source /Users/kiril/.evm/scripts/evm
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
