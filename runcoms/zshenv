@@ -13,12 +13,12 @@ fi
 export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/:/usr/local/go/bin
 export GOPATH=$HOME
 export PATH=$GOPATH/bin:$PATH
-export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+#export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 alias ll="ls -ltr"
 alias loc="git ls-files | xargs wc -l"
 alias branchgc="git checkout master;git branch --merged | grep -v master|awk '{print \"git branch -d\" \$0;}'|bash"
-alias vim='nvim'
+#alias vim='nvim'
 
 # Setting ag as the default source for fzf
 export FZF_DEFAULT_COMMAND='ag -g ""'
