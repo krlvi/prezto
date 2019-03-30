@@ -12,6 +12,3 @@ fi
 
 # Customize to your needs...
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-if [  ]; then source <(kubectl completion zsh); fi
