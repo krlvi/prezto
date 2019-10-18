@@ -10,12 +10,21 @@ if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; t
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
 
-export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/:/usr/local/go/bin
+export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/:/usr/local/go/bin:~/opt/goland/current/bin/
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
-export JAVA_HOME=/usr/local/java/jdk1.8.0_201
+export JAVA_HOME=/usr/lib/jvm/java-openjdk
+export PATH=/home/kiril/bin:$PATH
+export PATH=/home/kiril/.cargo/bin:$PATH
+export PATH=/home/kiril/.local/bin:$PATH
+source ~/.ssh/secrets
 
-alias ll="ls -ltr"
+export EDITOR=nvim
+
+alias ll="exa -lr"
+alias open="xdg-open"
+alias vim=nvim
+alias ag=rg
 alias loc="git ls-files | xargs wc -l"
 alias branchgc="git checkout master;git branch --merged | grep -v master|awk '{print \"git branch -d\" \$0;}'|bash"
 #alias vim='nvim'

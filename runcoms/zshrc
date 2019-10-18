@@ -11,4 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+if [ ! -z "$TERM" ]; then
+    cat /etc/motd
+fi
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
