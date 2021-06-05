@@ -13,11 +13,16 @@ fi
 #export PATH=$PATH:~/opt/dotfiles/scripts/:~/.cargo/bin/:/usr/local/go/bin:~/opt/goland/current/bin/
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$PATH
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+#export JAVA_HOME=`/usr/libexec/java_home -v 11`
+export PATH=$PATH:$HOME/bin/:$HOME/opt/flutter/bin:$HOME/.pub-cache/bin:$HOME/.mix/escripts
 #source ~/.ssh/secrets
 
 export EDITOR=nvim
 
+alias kmd="sudo sh -c '/Users/kiril/bin/kmonad /Users/kiril/src/kmonad/keymap/myapple.kbd >/dev/null 2>&1 & disown %1'"
+alias pi=pijul
+alias pj=pijul
 alias ll="exa -lr"
 alias vim=nvim
 alias ag=rg
