@@ -20,7 +20,6 @@ export PATH=$PATH:$HOME/bin/:$HOME/opt/flutter/bin:$HOME/.pub-cache/bin:$HOME/.m
 
 export EDITOR=nvim
 
-alias kmd="sudo sh -c '/Users/kiril/bin/kmonad /Users/kiril/src/kmonad/keymap/myapple.kbd >/dev/null 2>&1 & disown %1'"
 alias pi=pijul
 alias pj=pijul
 alias ll="exa -lr"
